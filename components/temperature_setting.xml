@@ -1,0 +1,50 @@
+<component>
+	<animations>
+		<timeline name="timeline_modified_value" />
+	</animations>
+
+	<consts />
+
+	<styles>
+		<style name="style_temp_setting_dark" text_color="0xFFFFFF" />
+		<style name="style_temp_setting_light" text_color="0x000000" />
+	</styles>
+
+	<view width="250" height="200" style_bg_opa="0" style_border_opa="0">
+		<bind_style name="style_temp_setting_dark" subject="is_dark_mode" ref_value="1" />
+		<bind_style name="style_temp_setting_light" subject="is_dark_mode" ref_value="0" />
+
+		<lv_label text="Temperature" align="center" y="-35" x="0" style_text_font="font_medium" />
+
+		<temperature_label
+			name="temperature_label"
+			bind_text="room1_temperature"
+			align="center"
+			y="-10"
+			style_text_font="font_medium"
+		/>
+
+		<lv_button width="40" height="40" style_radius="20" align="center" x="-50" y="40">
+			<subject_increment_event
+				trigger="clicked"
+				subject="room1_temperature"
+				step="-1"
+				max_value="30"
+				min_value="16"
+			/>
+			<lv_image src="symbol_minus" align="center" />
+			<play_timeline_event target="temperature_label" timeline="timeline_value_modified" />
+		</lv_button>
+		<lv_button width="40" height="40" style_radius="20" align="center" x="50" y="40">
+			<subject_increment_event
+				trigger="clicked"
+				subject="room1_temperature"
+				step="1"
+				max_value="30"
+				min_value="16"
+			/>
+			<lv_image src="symbol_plus" align="center" />
+			<play_timeline_event target="temperature_label" timeline="timeline_value_modified" />
+		</lv_button>
+	</view>
+</component>

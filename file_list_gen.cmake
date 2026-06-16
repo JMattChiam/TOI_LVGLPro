@@ -1,0 +1,14 @@
+set(LV_EDITOR_PROJECT_SOURCES)
+list(
+  APPEND
+  LV_EDITOR_PROJECT_SOURCES
+  ${CMAKE_CURRENT_LIST_DIR}/components/temperature_label_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/components/temperature_setting_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/fonts/font_large_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/fonts/font_medium_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/fonts/font_small_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/images/symbol_minus_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/images/symbol_plus_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/LVGLPro_TOI_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/LVGLPro_TOI.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/screen_1_gen.c)

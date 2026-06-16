@@ -1,0 +1,52 @@
+<globals>
+	<api>
+		<!-- Add <enumdefs> here -->
+	</api>
+
+	<consts>
+		<!-- Add <px>, <int>, <color> etc here -->
+	</consts>
+
+	<styles>
+		<style name="style_light_mode" bg_color="0xe4e4e4" text_color="0x000000" />
+		<style name="style_dark_mode" bg_color="0x3f3c3c" text_color="0xFFFFFF" />
+	</styles>
+
+	<subjects>
+		<!-- Add <int>, <string>, or <float> subjects here -->
+		<int name="room1_temperature" value="20" />
+		<int name="is_dark_mode" value="0" />
+	</subjects>
+
+	<images>
+		<data name="symbol_plus" src_path="images/plus.png" color_format="argb8888" />
+		<data name="symbol_minus" src_path="images/minus.png" color_format="argb8888" />
+	</images>
+
+	<fonts>
+		<bin
+			name="font_large"
+			as_file="false"
+			src_path="fonts/Montserrat_Medium.ttf"
+			size="48"
+			range="0x20-0x7f"
+			bpp="8"
+		/>
+		<bin
+			name="font_medium"
+			as_file="false"
+			src_path="fonts/Montserrat_Medium.ttf"
+			size="24"
+			range="0x20-0x7f"
+			bpp="8"
+		/>
+		<bin
+			name="font_small"
+			as_file="false"
+			src_path="fonts/Montserrat_Medium.ttf"
+			size="12"
+			range="0x20-0x7f"
+			bpp="8"
+		/>
+	</fonts>
+</globals>

@@ -1,0 +1,20 @@
+<component>
+	<consts>
+		<int name="animation_duration" value="75" />
+	</consts>
+	<animations>
+		<timeline name="timeline_value_modified">
+			<animation
+				target="self"
+				duration="#animation_duration"
+				prop="opa"
+				start="64"
+				end="256"
+				delay="#animation_duration"
+				early_apply="true"
+			/>
+		</timeline>
+	</animations>
+
+	<view extends="lv_label" />
+</component>

@@ -1,0 +1,20 @@
+<screen permanent="true">
+	<animations />
+	<consts />
+
+	<styles />
+
+	<view>
+		<bind_style name="style_dark_mode" subject="is_dark_mode" ref_value="1" />
+		<bind_style name="style_light_mode" subject="is_dark_mode" ref_value="0" />
+
+		<temperature_setting name="temperature_setting_room1" align="center" />
+
+		<lv_label text="Room 1" align="top_mid" y="20" style_text_font="font_large" />
+
+		<lv_button align="bottom_mid" y="-50">
+			<lv_label text="Toggle style" />
+			<subject_toggle_event subject="is_dark_mode" />
+		</lv_button>
+	</view>
+</screen>
