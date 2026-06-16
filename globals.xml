@@ -27,7 +27,7 @@
 		<bin
 			name="font_large"
 			as_file="false"
-			src_path="./fonts/Montserrat_Medium.ttf"
+			src_path="fonts/Montserrat_Medium.ttf"
 			size="48"
 			range="0x20-0x7f"
 			bpp="8"
@@ -35,7 +35,7 @@
 		<bin
 			name="font_medium"
 			as_file="false"
-			src_path="./fonts/Montserrat_Medium.ttf"
+			src_path="fonts/Montserrat_Medium.ttf"
 			size="24"
 			range="0x20-0x7f"
 			bpp="8"
@@ -43,7 +43,7 @@
 		<bin
 			name="font_small"
 			as_file="false"
-			src_path="./fonts/Montserrat_Medium.ttf"
+			src_path="fonts/Montserrat_Medium.ttf"
 			size="12"
 			range="0x20-0x7f"
 			bpp="8"
